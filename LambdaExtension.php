@@ -60,7 +60,7 @@ class LambdaExtension extends \Twig_Extension
             new \Twig_SimpleFilter('map', '\DPolac\TwigLambda\LambdaExtension::map'),
             new \Twig_SimpleFilter('select', '\DPolac\TwigLambda\LambdaExtension::map'),
 
-            new \Twig_SimpleFilter('filter', '\DPolac\TwigLambda\LambdaExtension::filter'),
+            new \Twig_SimpleFilter('l_filter', '\DPolac\TwigLambda\LambdaExtension::filter'),
             new \Twig_SimpleFilter('where', '\DPolac\TwigLambda\LambdaExtension::filter'),
 
             new \Twig_SimpleFilter('unique_by', '\DPolac\TwigLambda\LambdaExtension::uniqueBy'),

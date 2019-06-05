@@ -19,13 +19,13 @@ class LambdaExtension extends \Twig_Extension
     {
         return [
             [
-                '=>' => [
+                '==>' => [
                     'precedence' => 0,
                     'class' => '\DPolac\TwigLambda\NodeExpression\SimpleLambda'
                 ],
             ],
             [
-                '=>' => [
+                '==>' => [
                     'precedence' => 0,
                     'class' => '\DPolac\TwigLambda\NodeExpression\LambdaWithArguments',
                     'associativity' => \Twig_ExpressionParser::OPERATOR_LEFT
@@ -57,10 +57,10 @@ class LambdaExtension extends \Twig_Extension
     public function getFilters()
     {
         return [
-            new \Twig_SimpleFilter('map', '\DPolac\TwigLambda\LambdaExtension::map'),
+            // new \Twig_SimpleFilter('map', '\DPolac\TwigLambda\LambdaExtension::map'),
             new \Twig_SimpleFilter('select', '\DPolac\TwigLambda\LambdaExtension::map'),
 
-            new \Twig_SimpleFilter('l_filter', '\DPolac\TwigLambda\LambdaExtension::filter'),
+            // new \Twig_SimpleFilter('l_filter', '\DPolac\TwigLambda\LambdaExtension::filter'),
             new \Twig_SimpleFilter('where', '\DPolac\TwigLambda\LambdaExtension::filter'),
 
             new \Twig_SimpleFilter('unique_by', '\DPolac\TwigLambda\LambdaExtension::uniqueBy'),
